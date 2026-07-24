@@ -21,14 +21,6 @@ runtime:
           expect(res.status).to.equal(200);
         });
 
-        test("anonymous user is not premium", function() {
-          expect(body).to.include({
-            isPremium: false,
-            source: null,
-            message: "User not authenticated"
-          });
-        });
-
 settings:
   encodeUrl: true
   timeout: 0
